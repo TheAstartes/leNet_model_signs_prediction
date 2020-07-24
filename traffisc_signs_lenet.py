@@ -198,7 +198,7 @@ print('Test accuracy:', score[1])
 
 import requests
 from PIL import Image
-url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbYmAxywDujSteFDBGngXsXMWRwa3-Tb4sKhwF6OY1DX-3mCl3'
+url = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbYmAxywDujSteFDBGngXsXMWRwa3-Tb4sKhwF6OY1DX-3mCl3'  #URL for image we want to use 
 r = requests.get(url, stream=True)
 img = Image.open(r.raw)
 plt.imshow(img, cmap=plt.get_cmap('gray'))
